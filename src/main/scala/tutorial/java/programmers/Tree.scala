@@ -2,11 +2,11 @@ package tutorial.java.programmers
 
 
 /*
-• the new keyword is not mandatory
-• getter functions are automatically defined for the constructor parameters (i.e c.v),
-• default definitions for methods equals and hashCode are provided, 
-• a default definition for method toString is provided
-• pattern matching
+ the new keyword is not mandatory
+ getter functions are automatically defined for the constructor parameters (i.e c.v),
+ default definitions for methods equals and hashCode are provided, 
+ a default definition for method toString is provided
+ pattern matching
 */
 
 abstract class Tree

@@ -73,13 +73,13 @@ object TestScala extends App {
 
   val v42 = 42
   Some(3) match {
-    //“v42” is interpreted as a name matching any Int value, and “42” is printed
+    //is interpreted as a name matching any Int value, and is printed
     case Some(v42) => println("42")
     case _         => println("Not 42")
   }
 
   Some(3) match {
-    //”`v42`” with backticks is interpreted as the existing val v42, and “Not 42” is printed.
+    //with backticks is interpreted as the existing val v42, and is printed.
     case Some(`v42`) => println("42")
     case _           => println("Not 42")
   }
@@ -89,7 +89,7 @@ object TestScala extends App {
     //UppercaseVal is treated as an existing val, 
     //rather than a new pattern variable, 
     //because it starts with an uppercase letter.
-    //Thus, the value contained within UppercaseVal is checked against 3, and “Not 42” is printed.
+    //Thus, the value contained within UppercaseVal is checked against 3, and 42 is printed.
     case Some(UppercaseVal) => println("42")
     case _                  => println("Not 42")
   }
